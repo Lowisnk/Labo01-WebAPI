@@ -50,7 +50,7 @@ async function handleContactsRequest(req, res) {
                     return response(res, 400);
         }
     } else {
-        if (req.url.includes("/api/contacts/")) {
+        if (req.url.includes("/api/bookmarks/")) {
             let id = parseInt(req.url.substring(req.url.lastIndexOf("/") + 1, req.url.length));
             switch (req.method) {
                 case "GET":
